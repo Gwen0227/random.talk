@@ -223,6 +223,23 @@ const tocSections = await getTOCSections(currentPostId)
        />
     </div>
   )}
+     <section class="col-start-2 mt-12 mb-8">
+      <div class="rounded-2xl bg-muted/30 p-6 border border-border/50 text-center">
+        <h3 class="text-lg font-semibold mb-2 text-foreground">給讀者的話</h3>
+        <p class="text-sm text-muted-foreground leading-relaxed italic">
+          感謝你閱讀到最後！如果你喜歡這篇文章，歡迎分享給更多人。
+          或是對內容有任何想法，也歡迎隨時與我交流。✨
+        </p>
+        <div class="mt-4 flex justify-center gap-4">
+           <div class="h-1 w-12 bg-primary/20 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <PostNavigation
+      newerPost={navigation.newer}
+      olderPost={navigation.older}
+      parentPost={isCurrentSubpost ? navigation.parent : undefined}
     </article>
 
     {
